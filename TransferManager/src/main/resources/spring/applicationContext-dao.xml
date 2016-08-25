@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:aop="http://www.springframework.org/schema/aop"
+      xmlns:tx="http://www.springframework.org/schema/tx"
+      xmlns:jee="http://www.springframework.org/schema/jee"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans classpath:org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop classpath:org/springframework/aop/config/spring-aop-3.0.xsd
+           http://www.springframework.org/schema/jee classpath:org/springframework/ejb/config/spring-jee-3.0.xsd
+           http://www.springframework.org/schema/tx classpath:org/springframework/transaction/config/spring-tx-3.0.xsd">
+
+	<!-- ========================= DATABASE CONFIGURATION ========================= 
+	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/dasdb"/>
+	-->
+	<bean id="dataSource"  class="com.mchange.v2.c3p0.ComboPooledDataSource"  destroy-method="close">
+    	<property name="driverClass" value="${oracle.driver}" />
+    	<property name="jdbcUrl" value="${oracle.url}" />
+    	<property name="user" value="${oracle.username}" />
+    	<property name="password" value="${oracle.password}" />
+    	
+    	<property name="initialPoolSize" value="${oracle.init.pool}" />
+    	<property name="maxPoolSize" value="${oracle.max.pool}" />
+    	<property name="minPoolSize" value="${oracle.min.pool}" />
+    	
+    	<property name="acquireIncrement" value="3" />
+    	<property name="acquireRetryAttempts" value="30" />
+    	<property name="acquireRetryDelay" value="1000" />
+    	
+    	<property name="idleConnectionTestPeriod" value="60" />
+    	<property name="preferredTestQuery" value="select 1 from dual" />
+    	<property name="testConnectionOnCheckin" value="true" />
+    	<property name="testConnectionOnCheckout" value="false" />
+  	</bean>
+
+	<!-- SqlMap setup for iBATIS Database Layer -->
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:kr/co/d2net/dao/sql/sql-map-config.xml"/>
+	</bean>
+	
+</beans>

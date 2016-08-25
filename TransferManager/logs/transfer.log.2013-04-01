@@ -1,0 +1,1550 @@
+[2013-04-01 11:14:32,175]MLog.<clinit>(80) | MLog clients using log4j logging.
+[2013-04-01 11:14:32,377]C3P0Registry.banner(204) | Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[2013-04-01 11:14:32,917]FileCronControl.run(71) | cronQueue size : 0
+[2013-04-01 11:14:33,319]AbstractPoolBackedDataSource.getPoolManager(462) | Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0yx8t1i7jh2e11bxctw|42aa0877, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yx8t1i7jh2e11bxctw|42aa0877, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@14.36.147.34:1521:orclesh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1 from dual, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2013-04-01 11:14:38,360]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:14:38,375]BusApplicationContext.prepareRefresh(456) | Refreshing org.apache.cxf.bus.spring.BusApplicationContext@1786ed7a: startup date [Mon Apr 01 11:14:38 KST 2013]; root of context hierarchy
+[2013-04-01 11:14:38,429]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[2013-04-01 11:14:38,515]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:38,516]FtpTransferControl.run(270) | eq_id : FTP03
+[2013-04-01 11:14:38,516]FtpTransferControl.run(271) | ct_id : P_20130322_032412
+[2013-04-01 11:14:38,516]FtpTransferControl.run(272) | tf_id : 1403
+[2013-04-01 11:14:38,517]FtpTransferControl.run(273) | tf_cd : P_20130322_032412 
+[2013-04-01 11:14:38,517]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:38,517]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:38,584]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+[2013-04-01 11:14:38,589]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+[2013-04-01 11:14:38,597]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+[2013-04-01 11:14:38,601]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+[2013-04-01 11:14:38,606]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+[2013-04-01 11:14:38,766]ReflectionServiceFactoryBean.buildServiceFromClass(409) | Creating Service {http://soap.d2net.co.kr/}NavigatorService from class kr.co.d2net.soap.Navigator
+[2013-04-01 11:14:39,693]RepWmvCopy.start(36) | WMV Copy Thread Start!!
+[2013-04-01 11:14:39,707]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:39,709]FtpTransferControl.run(270) | eq_id : FTP04
+[2013-04-01 11:14:39,709]FtpTransferControl.run(271) | ct_id : P_20130321_122421
+[2013-04-01 11:14:39,709]FtpTransferControl.run(272) | tf_id : 1402
+[2013-04-01 11:14:39,709]FtpTransferControl.run(273) | tf_cd : P_20130321_122421 
+[2013-04-01 11:14:39,710]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:39,710]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:39,762]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130322_032412.mxf
+[2013-04-01 11:14:40,000]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 19 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 24 more
+[2013-04-01 11:14:40,136]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130321_122421.mxf
+[2013-04-01 11:14:40,160]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:40,195]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 19 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 24 more
+[2013-04-01 11:14:40,265]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:40,494]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:14:41,333]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:14:41,405]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:14:45,508]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:14:45,533]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:45,534]FtpTransferControl.run(270) | eq_id : FTP03
+[2013-04-01 11:14:45,534]FtpTransferControl.run(271) | ct_id : P_20130322_062401
+[2013-04-01 11:14:45,534]FtpTransferControl.run(272) | tf_id : 1405
+[2013-04-01 11:14:45,535]FtpTransferControl.run(273) | tf_cd : P_20130322_062401 
+[2013-04-01 11:14:45,535]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:45,535]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:45,969]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130322_062401.mxf
+[2013-04-01 11:14:46,065]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 19 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 24 more
+[2013-04-01 11:14:46,181]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:46,181]FtpTransferControl.run(270) | eq_id : FTP04
+[2013-04-01 11:14:46,181]FtpTransferControl.run(271) | ct_id : P_20130322_052437
+[2013-04-01 11:14:46,182]FtpTransferControl.run(272) | tf_id : 1404
+[2013-04-01 11:14:46,182]FtpTransferControl.run(273) | tf_cd : P_20130322_052437 
+[2013-04-01 11:14:46,182]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:46,183]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:46,244]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:46,376]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:14:46,423]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:14:46,560]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130322_052437.mxf
+[2013-04-01 11:14:46,681]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 19 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 24 more
+[2013-04-01 11:14:46,753]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:46,789]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:14:51,386]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:14:51,460]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:14:51,995]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:14:52,016]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:52,017]FtpTransferControl.run(270) | eq_id : FTP03
+[2013-04-01 11:14:52,017]FtpTransferControl.run(271) | ct_id : P_20130325_102459
+[2013-04-01 11:14:52,017]FtpTransferControl.run(272) | tf_id : 1407
+[2013-04-01 11:14:52,017]FtpTransferControl.run(273) | tf_cd : P_20130325_102459 
+[2013-04-01 11:14:52,018]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:52,018]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:52,314]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130325_102459.mxf
+[2013-04-01 11:14:52,429]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 19 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 24 more
+[2013-04-01 11:14:52,532]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:52,564]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:52,564]FtpTransferControl.run(270) | eq_id : FTP04
+[2013-04-01 11:14:52,564]FtpTransferControl.run(271) | ct_id : P_20130325_102458
+[2013-04-01 11:14:52,565]FtpTransferControl.run(272) | tf_id : 1406
+[2013-04-01 11:14:52,565]FtpTransferControl.run(273) | tf_cd : P_20130325_102458 
+[2013-04-01 11:14:52,565]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:52,566]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:53,336]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:14:53,396]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130325_102458.mxf
+[2013-04-01 11:14:53,416]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:53,469]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 17 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 22 more
+[2013-04-01 11:14:56,398]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:14:56,496]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:14:58,349]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:14:58,365]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:58,365]FtpTransferControl.run(270) | eq_id : FTP03
+[2013-04-01 11:14:58,365]FtpTransferControl.run(271) | ct_id : P_20130326_092428
+[2013-04-01 11:14:58,366]FtpTransferControl.run(272) | tf_id : 1409
+[2013-04-01 11:14:58,366]FtpTransferControl.run(273) | tf_cd : P_20130326_092428 
+[2013-04-01 11:14:58,366]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:58,366]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:58,664]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130326_092428.mxf
+[2013-04-01 11:14:58,781]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:58,891]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:14:58,891]FtpTransferControl.run(270) | eq_id : FTP04
+[2013-04-01 11:14:58,891]FtpTransferControl.run(271) | ct_id : P_20130325_112430
+[2013-04-01 11:14:58,892]FtpTransferControl.run(272) | tf_id : 1408
+[2013-04-01 11:14:58,892]FtpTransferControl.run(273) | tf_cd : P_20130325_112430 
+[2013-04-01 11:14:58,892]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:14:58,893]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:14:59,030]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 17 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 22 more
+[2013-04-01 11:14:59,350]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130325_112430.mxf
+[2013-04-01 11:14:59,557]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:14:59,658]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:14:59,715]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 17 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 22 more
+[2013-04-01 11:15:00,948]PhaseInterceptorChain.doLog(383) | Interceptor for {http://soap.d2net.co.kr/}NavigatorService#{http://soap.d2net.co.kr/}saveEqStatus has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:544)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:341)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:294)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy39.saveEqStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$HutbitThread.run(FtpTransferControl.java:192)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: ConnectException invoking http://10.1.0.66/services/ServiceNavigator: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2155)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2140)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:732)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 11 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:158)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:394)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:529)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:233)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:323)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:970)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:911)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:836)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1014)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:2050)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:2002)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2070)
+	... 14 more
+[2013-04-01 11:15:00,950]FtpTransferControl.run(194) | [FTP Control] NotiThread Error - Could not send Message.
+[2013-04-01 11:15:01,403]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:01,522]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:04,677]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:04,699]FtpTransferControl.run(269) | ################ ftp put data ################
+[2013-04-01 11:15:04,700]FtpTransferControl.run(270) | eq_id : FTP03
+[2013-04-01 11:15:04,700]FtpTransferControl.run(271) | ct_id : P_20130326_092432
+[2013-04-01 11:15:04,700]FtpTransferControl.run(272) | tf_id : 1410
+[2013-04-01 11:15:04,701]FtpTransferControl.run(273) | tf_cd : P_20130326_092432 
+[2013-04-01 11:15:04,701]FtpTransferControl.run(274) | fl_path: /제작/PGM/
+[2013-04-01 11:15:04,701]FtpTransferImpl.uploadFile(132) | [upload] ftp - ip:14.36.147.23, user: jjm, pass: elxnspt
+[2013-04-01 11:15:04,999]FtpTransferImpl.uploadFile(168) | MXF File Not Found! - X:\mp2\제작\PGM\P_20130326_092432.mxf
+[2013-04-01 11:15:05,039]FtpTransferControl.run(281) | ftp upload Error!!
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferImpl.uploadFile(FtpTransferImpl.java:205)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:279)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 18 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 23 more
+[2013-04-01 11:15:05,094]FtpTransferControl.run(286) | Transfer Statues Update Error - SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+org.springframework.jdbc.BadSqlGrammarException: SqlMapClient operation; bad SQL grammar []; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.update(SqlMapClientTemplate.java:378)
+	at kr.co.d2net.dao.TransferDaoImpl.updateTransfer(TransferDaoImpl.java:65)
+	at kr.co.d2net.services.StatuServiceImpl.saveStatus(StatuServiceImpl.java:45)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy11.saveStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$TransferUpload.run(FtpTransferControl.java:284)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the Trsf.updateVsTransfer-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:457)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:380)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$9.doInSqlMapClient(SqlMapClientTemplate.java:1)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 17 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00957: 열명이 중복되었습니다
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1044)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1329)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 22 more
+[2013-04-01 11:15:05,228]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:06,409]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:06,536]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:10,242]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:10,263]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:11,424]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:11,561]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:15,321]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:15,410]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:16,456]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:16,571]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:20,426]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:20,443]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:21,466]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:21,599]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:25,453]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:25,463]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:26,481]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:26,613]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:26,953]PhaseInterceptorChain.doLog(383) | Interceptor for {http://soap.d2net.co.kr/}NavigatorService#{http://soap.d2net.co.kr/}saveEqStatus has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:544)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:341)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:294)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy39.saveEqStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$HutbitThread.run(FtpTransferControl.java:192)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: ConnectException invoking http://10.1.0.66/services/ServiceNavigator: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2155)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2140)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:732)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 11 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:158)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:394)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:529)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:233)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:323)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:970)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:911)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:836)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1014)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:2050)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:2002)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2070)
+	... 14 more
+[2013-04-01 11:15:26,955]FtpTransferControl.run(194) | [FTP Control] NotiThread Error - Could not send Message.
+[2013-04-01 11:15:30,474]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:30,496]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:31,497]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:31,628]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:35,505]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:35,517]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:36,549]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:36,645]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:40,567]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:40,576]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:41,557]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:41,660]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:45,583]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:45,594]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:46,561]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:46,671]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:50,604]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:50,619]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:51,572]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:51,707]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:15:52,951]PhaseInterceptorChain.doLog(383) | Interceptor for {http://soap.d2net.co.kr/}NavigatorService#{http://soap.d2net.co.kr/}saveEqStatus has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:544)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:341)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:294)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy39.saveEqStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$HutbitThread.run(FtpTransferControl.java:192)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: ConnectException invoking http://10.1.0.66/services/ServiceNavigator: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2155)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2140)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:732)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 11 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:158)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:394)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:529)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:233)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:323)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:970)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:911)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:836)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1014)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:2050)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:2002)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2070)
+	... 14 more
+[2013-04-01 11:15:52,953]FtpTransferControl.run(194) | [FTP Control] NotiThread Error - Could not send Message.
+[2013-04-01 11:15:55,632]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:15:55,650]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:15:56,593]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:15:56,780]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:00,662]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:00,791]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:01,602]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:01,815]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:05,804]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:05,817]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:06,823]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:06,845]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:10,832]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:10,859]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:11,854]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:11,881]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:15,873]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:15,882]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:16,876]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:16,901]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:18,952]PhaseInterceptorChain.doLog(383) | Interceptor for {http://soap.d2net.co.kr/}NavigatorService#{http://soap.d2net.co.kr/}saveEqStatus has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:255)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:544)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:341)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:294)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:73)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:124)
+	at $Proxy39.saveEqStatus(Unknown Source)
+	at kr.co.d2net.ftp.FtpTransferControl$HutbitThread.run(FtpTransferControl.java:192)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: ConnectException invoking http://10.1.0.66/services/ServiceNavigator: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:2155)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2140)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:732)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 11 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:158)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:394)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:529)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:233)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:323)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:970)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:911)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:836)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1014)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:2050)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:2002)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:2070)
+	... 14 more
+[2013-04-01 11:16:18,954]FtpTransferControl.run(194) | [FTP Control] NotiThread Error - Could not send Message.
+[2013-04-01 11:16:20,900]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:20,911]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:21,880]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:21,922]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:29,031]MLog.<clinit>(80) | MLog clients using log4j logging.
+[2013-04-01 11:16:29,204]C3P0Registry.banner(204) | Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[2013-04-01 11:16:29,745]FileCronControl.run(71) | cronQueue size : 0
+[2013-04-01 11:16:30,105]AbstractPoolBackedDataSource.getPoolManager(462) | Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0yx8t1i7lz8drfuwwm|6639c8c1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yx8t1i7lz8drfuwwm|6639c8c1, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@14.36.147.34:1521:orclesh, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1 from dual, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2013-04-01 11:16:31,356]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:31,370]BusApplicationContext.prepareRefresh(456) | Refreshing org.apache.cxf.bus.spring.BusApplicationContext@1786ed7a: startup date [Mon Apr 01 11:16:31 KST 2013]; root of context hierarchy
+[2013-04-01 11:16:31,413]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[2013-04-01 11:16:31,428]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:31,521]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-jaxws.xml]
+[2013-04-01 11:16:31,526]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+[2013-04-01 11:16:31,531]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-xml.xml]
+[2013-04-01 11:16:31,535]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-addr.xml]
+[2013-04-01 11:16:31,540]ControlledValidationXmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+[2013-04-01 11:16:31,684]ReflectionServiceFactoryBean.buildServiceFromClass(409) | Creating Service {http://soap.d2net.co.kr/}NavigatorService from class kr.co.d2net.soap.Navigator
+[2013-04-01 11:16:32,535]RepWmvCopy.start(36) | WMV Copy Thread Start!!
+[2013-04-01 11:16:34,062]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:34,123]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:36,450]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:36,612]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:39,127]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:39,150]TransferManager.showTransferList(121) | Transfer List Reload Completed!!
+[2013-04-01 11:16:41,952]FtpTransferControl.run(218) | putQueue size : 0
+[2013-04-01 11:16:41,970]FtpTransferControl.run(232) | downQueue size : 0
+[2013-04-01 11:16:44,146]TransferManager.showEqList(163) | EqList Reload Completed!!
+[2013-04-01 11:16:44,214]TransferManager.showTransferList(121) | Transfer List Reload Completed!!

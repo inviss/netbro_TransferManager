@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Eq">
+	<typeAlias alias="Eq" type="kr.co.d2net.commons.dto.EqTbl"/>
+    
+    <resultMap id="EqMap" class="Eq">
+    	<result property="eqId" column="EQ_ID" />
+		<result property="eqNm" column="EQ_NM" />
+		<result property="eqGb" column="EQ_GB" />
+		<result property="eqIp" column="EQ_IP" />
+		<result property="jobId" column="JOB_ID" />
+		<result property="useYn" column="USE_YN" />
+		<result property="status" column="STATUS" />
+    </resultMap>
+    
+    <select id="findEq" resultMap="EqMap" parameterClass="map">
+    	SELECT
+    		*
+    	FROM EQ_TBL
+    	<dynamic prepend="WHERE">
+			<isNotEmpty prepend="AND" property="eqId">
+				EQ_ID like #eqId#
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="eqGb">
+				EQ_GB = #eqGb#
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="status">
+				STATUS = #status#
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="useYn">
+				USE_YN = #useYn#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <select id="getOperatingStatus" resultClass="Eq">
+    	SELECT
+			A.EQ_GB eqGb, A.EQ_IP eqIp, A.waitQ, A.useQ, B.jobId
+		FROM (
+		  SELECT
+		      EQ_GB, EQ_IP, COUNT(EQ_ID) waitQ, SUM(CASE STATUS WHEN 'I' THEN 1 ELSE 0 END) useQ
+		  FROM EQ_TBL
+          WHERE EQ_ID like 'FTP%'
+		  GROUP BY EQ_GB, EQ_IP
+		) A INNER JOIN (
+		  SELECT
+		      EQ_GB, SUBSTR(max(sys_connect_by_path((
+		      CASE WHEN JOB_ID IS NOT NULL THEN '['||JOB_ID||']' ELSE ' ' end), ',')), 2) jobId
+		  FROM (
+		      SELECT
+		          EQ_GB, JOB_ID, ROW_NUMBER() OVER (PARTITION BY EQ_GB ORDER BY JOB_ID) rnum
+		      FROM EQ_TBL
+              WHERE EQ_ID like 'FTP%'
+		  )
+		  START WITH rnum = 1
+		  CONNECT BY PRIOR rnum = rnum -1 AND PRIOR EQ_GB = EQ_GB
+		  GROUP BY EQ_GB
+		) B ON A.EQ_GB = B.EQ_GB
+		ORDER BY A.EQ_GB ASC
+    </select>
+    
+    <update id="updateEq" parameterClass="Eq">
+    	UPDATE EQ_TBL SET STATUS = #status#
+    	<isNotNull prepend="," property="jobId">
+    		JOB_ID = #jobId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	WHERE eq_id = #eqId#
+    </update>
+    
+    <insert id="insertEq" parameterClass="Eq">
+    	INSERT INTO EQ_TBL (EQ_ID, EQ_NM, EQ_GB, EQ_IP, USE_YN) VALUES (
+    		#eqId:VARCHAR:NO_ENTRY#, #eqNm:VARCHAR:NO_ENTRY#, #eqGb:VARCHAR:NO_ENTRY#, #eqIp:VARCHAR:NO_ENTRY#, #useYn:VARCHAR:NO_ENTRY#
+    	)
+    </insert>
+    
+</sqlMap>

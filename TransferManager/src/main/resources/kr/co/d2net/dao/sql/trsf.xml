@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Trsf">
+	<typeAlias alias="Transfer" type="kr.co.d2net.commons.dto.Transfer"/>
+	<typeAlias alias="CtInst" type="kr.co.d2net.commons.dto.ContentInstTbl"/>
+
+	<resultMap id="TransferMap" class="Transfer">
+		<result property="tfId" column="TF_ID" />
+		<result property="ctId" column="CT_ID" />
+		<result property="tfCd" column="TF_CD" />
+		<result property="flPath" column="FL_PATH" />
+		<result property="ctNm" column="CT_NM" />
+		<result property="tfGb" column="TF_GB" />
+		<result property="regDtm" column="REG_DTM" />
+	</resultMap>
+	
+	<resultMap id="TrsfMap" class="Transfer">
+		<result property="ctId"	column="CT_ID" />
+		<result property="ctNm"	column="CT_NM" />
+		<result property="tfGb"	column="TF_GB" />
+		<result property="status"	column="STATUS" />
+		<result property="progress"	column="PROGRESS" />
+		<result property="regDtm"	column="REG_DTM" />
+		<result property="recount"	column="RECOUNT" />
+		<result property="priors"	column="PRIORS" />
+    </resultMap>
+    
+    <resultMap id="CtInstRpWmvMap" class="CtInst">
+		<result property="ctId"	column="CT_ID" />
+		<result property="ctiId"	column="CTI_ID" />
+		<result property="flPath"	column="FL_PATH" />
+		<result property="flNm"	column="FL_NM" />
+    </resultMap>
+	
+	<select id="findRPWmvCopy" resultMap="CtInstRpWmvMap" parameterClass="java.lang.String">
+    	SELECT
+      		a.ct_id, b.cti_id, b.fl_path, b.fl_nm
+		FROM CONTENTS_INFO_TBL a
+			inner JOIN CONTENTS_INST_INFO_TBL b ON a.ct_id = b.ct_id
+    	WHERE
+      		a.RACE_ID = #raceId# and b.CTI_FMT = '03' and (b.cp_yn is null or b.cp_yn = 'N')
+    </select>
+    
+    <update id="updateCtInst" parameterClass="CtInst">
+    	UPDATE CONTENTS_INST_INFO_TBL set USE_YN = 'Y'
+    	<isNotNull prepend="," property="flPath">
+    		FL_PATH = #flPath#
+    	</isNotNull>
+    	<isNotNull prepend="," property="flNm">
+    		FL_NM = #flNm#
+    	</isNotNull>
+    	<isNotNull prepend="," property="cpYn">
+    		CP_YN = #cpYn#
+    	</isNotNull>
+    	WHERE CTI_ID = #ctiId#
+    </update>
+    
+	<select id="findTransfer" resultMap="TransferMap" parameterClass="map">
+	<![CDATA[
+		SELECT A.* FROM (
+			SELECT
+				TRSF.TF_ID, TRSF.CT_ID, GET_TRSF_PATH(TRSF.TF_GB, substr(TRSF.CT_ID,1,1), TRSF.TF_ID) FL_PATH, 
+				TRSF.TF_GB, GET_TRSF_NM(TRSF.TF_GB, substr(TRSF.CT_ID,1,1), TRSF.TF_ID) CT_NM, TRSF.TF_CD, TRSF.REG_DTM,
+                (CASE TRSF.STATUS WHEN 'W' THEN 0 WHEN 'Q' THEN 1 WHEN 'I' THEN 2 WHEN  'E' THEN 3 ELSE 4 END) ORD
+			FROM (
+			    SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'D' TF_GB FROM CS_TRSF_TBL
+			    WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4 AND REG_DTM < sysdate
+			    UNION
+			    SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'U' TF_GB FROM VS_TRSF_TBL
+			    WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4 AND REG_DTM < sysdate
+			) TRSF
+			WHERE TRSF.TF_GB = #tfGb#
+		) A
+			WHERE ROWNUM <= #rownum# AND FL_PATH IS NOT NULL
+		ORDER BY A.ORD ASC
+	]]>
+	</select>
+	
+	<select id="findTransferStatus" resultMap="TrsfMap" parameterClass="map">
+    	SELECT
+			TRSF.CT_ID, TRSF.TF_CD,
+		    (CASE TRSF.STATUS 
+		        WHEN 'W' THEN '대기'
+                WHEN 'Q' THEN '요청'
+		        WHEN 'I' THEN '진행'
+		        WHEN 'C' THEN '완료'
+		        WHEN 'E' THEN '실패'
+		    ELSE '' END) STATUS, 
+		    (CASE TRSF.TF_GB
+		        WHEN 'U' THEN '업로드'
+		        WHEN 'D' THEN '다운로드'
+		    ELSE '' END) TF_GB, 
+		    TRSF.PROGRESS, TRSF.RECOUNT, TRSF.REG_DTM, GET_TRSF_NM(TRSF.TF_GB, substr(TRSF.CT_ID,1,1), TRSF.TF_ID) CT_NM, 
+		    TRSF.PRIORS
+		FROM (
+		    SELECT tf_id, ct_id, tf_cd, STATUS, 
+            (CASE STATUS 
+				        WHEN 'W' THEN 2
+		                WHEN 'Q' THEN 1
+				        WHEN 'I' THEN 0
+				        WHEN 'C' THEN 4
+				        WHEN 'E' THEN 3
+				    ELSE 5 END) ORD,
+            progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'D' TF_GB FROM CS_TRSF_TBL
+            <dynamic prepend="WHERE">
+            	USE_YN='Y' and
+            	<isNull prepend="AND" property="state">
+            		STATUS in ('W', 'I', 'E')
+            	</isNull>
+		         <isNotNull prepend="AND" property="state">
+			         STATUS in #state#
+		         </isNotNull>
+			</dynamic>
+		    UNION
+		    SELECT tf_id, ct_id, tf_cd, STATUS, 
+            (CASE STATUS 
+				        WHEN 'W' THEN 2
+		                WHEN 'Q' THEN 1
+				        WHEN 'I' THEN 0
+				        WHEN 'C' THEN 4
+				        WHEN 'E' THEN 3
+				    ELSE 5 END) ORD,
+            progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'U' TF_GB FROM VS_TRSF_TBL 
+            <dynamic prepend="WHERE">
+            	USE_YN='Y' and
+            	<isNull prepend="AND" property="state">
+            		STATUS in ('W', 'I', 'E')
+            	</isNull>
+		         <isNotNull prepend="AND" property="state">
+			         STATUS in #state#
+		         </isNotNull>
+			</dynamic>
+				) TRSF
+		ORDER BY TRSF.ORD ASC, TRSF.TF_ID ASC
+    </select>
+    
+	<update id="updateCsTransfer" parameterClass="Transfer">
+    	UPDATE CS_TRSF_TBL SET MOD_DTM = #modDtm#
+    	<isNotNull prepend="," property="status">
+    		STATUS = #status#
+    	</isNotNull>
+    	<isGreaterThan compareValue="-1" prepend="," property="progress">
+    		PROGRESS = #progress#
+    	</isGreaterThan>
+    	<isNotNull prepend="," property="recount">
+    		<isEqual prepend="," property="status" compareValue="E">
+    			RECOUNT = nvl(RECOUNT,0) + 1
+    		</isEqual>
+    		<isNotEqual prepend="," property="status" compareValue="E">
+    			RECOUNT = #recount#
+    		</isNotEqual>
+    	</isNotNull>
+    	<isNotNull prepend="," property="eqId">
+    		EQ_ID = #eqId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="priors">
+    		PRIORS = #priors#
+    	</isGreaterThan>
+    	<dynamic prepend="WHERE">
+	         <isNotNull prepend="AND" property="ctId">
+		         CT_ID = #ctId#
+	         </isNotNull>
+	         <isNotNull prepend="AND" property="tfId">
+		         TF_ID = #tfId#
+	         </isNotNull>
+		</dynamic>
+    </update>
+    
+    <update id="updateCsTransferMap" parameterClass="map">
+    	UPDATE CS_TRSF_TBL SET MOD_DTM = #modDtm#
+    	<isNotNull prepend="," property="eqId">
+    		EQ_ID = #eqId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="status">
+    		STATUS = #status#
+    	</isNotNull>
+    	<isNotNull prepend="," property="recount">
+    		RECOUNT = #recount#
+    	</isNotNull>
+    	<isGreaterThan compareValue="-1" prepend="," property="progress">
+    		PROGRESS = #progress#
+    	</isGreaterThan>
+    	<isEqual prepend="," property="status" compareValue="E">
+    		RECOUNT = nvl(RECOUNT,0) + 1
+    	</isEqual>
+    	<isNotNull prepend="," property="eqId">
+    		EQ_ID = #eqId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="priors">
+    		PRIORS = #priors#
+    	</isGreaterThan>
+    	<dynamic prepend="WHERE">
+	         <isNotNull prepend="AND" property="ctId">
+		         CT_ID = #ctId#
+	         </isNotNull>
+	         <isNotNull prepend="AND" property="tfId">
+		         TF_ID = #tfId#
+	         </isNotNull>
+		</dynamic>
+    </update>
+    
+    <update id="updateVsTransfer" parameterClass="Transfer">
+    	UPDATE VS_TRSF_TBL SET MOD_DTM = #modDtm#
+    	<isNotNull prepend="," property="eqId">
+    		EQ_ID = #eqId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="status">
+    		STATUS = #status#
+    	</isNotNull>
+    	<isNotNull prepend="," property="recount">
+    		<isEqual prepend="," property="status" compareValue="E">
+    			RECOUNT = nvl(RECOUNT,0) + 1
+    		</isEqual>
+    		<isNotEqual prepend="," property="status" compareValue="E">
+    			RECOUNT = #recount#
+    		</isNotEqual>
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="progress">
+    		PROGRESS = #progress#
+    	</isGreaterThan>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="priors">
+    		PRIORS = #priors#
+    	</isGreaterThan>
+    	<dynamic prepend="WHERE">
+	         <isNotNull prepend="AND" property="ctId">
+		         CT_ID = #ctId#
+	         </isNotNull>
+	         <isNotNull prepend="AND" property="tfId">
+		         TF_ID = #tfId#
+	         </isNotNull>
+		</dynamic>
+    </update>
+    
+    <update id="updateVsTransferMap" parameterClass="map">
+    	UPDATE VS_TRSF_TBL SET MOD_DTM = #modDtm#
+    	<isNotNull prepend="," property="status">
+    		STATUS = #status#
+    	</isNotNull>
+    	<isNotNull prepend="," property="recount">
+    		RECOUNT = #recount#
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="progress">
+    		PROGRESS = #progress#
+    	</isGreaterThan>
+    	<isEqual prepend="," property="status" compareValue="E">
+    		RECOUNT = nvl(RECOUNT,0) + 1
+    	</isEqual>
+    	<isNotNull prepend="," property="eqId">
+    		EQ_ID = #eqId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	<isGreaterThan compareValue="0" prepend="," property="priors">
+    		PRIORS = #priors#
+    	</isGreaterThan>
+    	<dynamic prepend="WHERE">
+	         <isNotNull prepend="AND" property="ctId">
+		         CT_ID = #ctId#
+	         </isNotNull>
+	         <isNotNull prepend="AND" property="tfId">
+		         TF_ID = #tfId#
+	         </isNotNull>
+		</dynamic>
+    </update>
+    
+    <update id="updateContentsInfo" parameterClass="map">
+    	UPDATE CONTENTS_INFO_TBL set ARCH_YN=#archYn#
+    	WHERE CT_ID = #ctId#
+    </update>
+    
+    <update id="updateContent" parameterClass="map">
+    	UPDATE CONTENTS_INFO_TBL set MOD_DTM=#modDtm#
+    	<isNotEmpty prepend="," property="csDelDt">
+    		CS_DEL_DT = #csDelDt#
+    	</isNotEmpty>
+    	<isNull prepend="," property="vsDelDt">
+    		VS_DEL_DT = null
+    	</isNull>
+    	<isNotNull prepend="," property="vsDelDt">
+    		VS_DEL_DT = #vsDelDt#
+    	</isNotNull>
+    	<isNotNull prepend="," property="archYn">
+    		ARCH_YN = #archYn#
+    	</isNotNull>  
+    	WHERE CT_ID = #ctId#
+    </update>
+    
+    <delete id="deleteCsTransfer" parameterClass="java.lang.String">
+    	delete from CS_TRSF_TBL where CT_ID = #ctId#
+    </delete>
+    
+    <delete id="deleteVsTransfer" parameterClass="java.lang.String">
+    	delete from VS_TRSF_TBL where CT_ID = #ctId#
+    </delete>
+
+</sqlMap>

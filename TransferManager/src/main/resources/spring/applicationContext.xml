@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans classpath:org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+       		http://www.springframework.org/schema/task classpath:org/springframework/scheduling/config/spring-task-3.0.xsd
+            http://www.springframework.org/schema/context classpath:org/springframework/context/config/spring-context-3.0.xsd">
+	  
+	<context:annotation-config />
+	<!--  -->
+	<context:component-scan base-package="kr.co.d2net.services" />
+	<context:component-scan base-package="kr.co.d2net.dao" />
+	
+    <!-- Configurer that replaces ${...} placeholders with values from a properties file -->
+    <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
+    <context:property-placeholder location="classpath:/config/db.properties,classpath:/config/wsdl.properties"/>
+    
+    <!-- Application Message Bundle -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">  
+        	<list>  
+        		<value>file:./config</value>
+            	<!--
+            	<value>classpath:/config/config</value>
+            	classpath 하위에 존재하게 되면 was에서 캐쉬를 하기때문에 변경이 되지 않음
+            	<value>/WEB-INF/messages/DBQuery</value>
+            	-->
+        	</list>  
+    	</property>
+		<property name="cacheSeconds" value="10" />
+	</bean>
+	
+	<bean id="ftpTransferService" class="kr.co.d2net.ftp.FtpTransferImpl"/>
+	<bean id="ftpStreamTransferService" class="kr.co.d2net.ftp.FtpStreamTransferImpl"/>
+	<bean id="ftpTransferControl" class="kr.co.d2net.ftp.FtpTransferControl" init-method="start" destroy-method="stop"/>
+	<bean id="fileCronControl" class="kr.co.d2net.cron.FileCronControl" init-method="start" destroy-method="stop"/>
+	
+	<!-- 2012.12.13 new -->
+	<bean id="repWmvCopy" class="kr.co.d2net.cron.RepWmvCopy" init-method="start" destroy-method="stop"/>
+	
+	<!-- XML Parser -->
+	<bean id="xmlStream" class="kr.co.d2net.commons.utils.XmlStreamImpl"/>
+	<!-- XML Writer -->
+	<bean id="xmlWriter" class="kr.co.d2net.commons.utils.XmlFileServiceImpl"/>
+	
+</beans>

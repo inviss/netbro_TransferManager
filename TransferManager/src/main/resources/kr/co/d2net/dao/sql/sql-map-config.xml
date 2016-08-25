@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" 
+		"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings enhancementEnabled="true" useStatementNamespaces="true" />
+	
+	<sqlMap resource="kr/co/d2net/dao/sql/trsf.xml" />
+	<sqlMap resource="kr/co/d2net/dao/sql/eq.xml" />
+	<!--
+	<sqlMap resource="kr/co/d2net/dao/sql/TfContent.xml" />
+	<sqlMap resource="kr/co/d2net/dao/sql/TfConfig.xml" />
+	-->
+</sqlMapConfig>
