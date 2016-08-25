@@ -1,0 +1,544 @@
+[2011-09-29 17:15:03,036]ClassPathXmlApplicationContext.prepareRefresh(456) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@476128: startup date [Thu Sep 29 17:15:03 KST 2011]; root of context hierarchy
+[2011-09-29 17:15:03,104]XmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[2011-09-29 17:15:03,332]XmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [spring/applicationContext-tx.xml]
+[2011-09-29 17:15:03,378]XmlBeanDefinitionReader.loadBeanDefinitions(315) | Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+[2011-09-29 17:15:03,558]PropertyPlaceholderConfigurer.loadProperties(177) | Loading properties file from class path resource [config/db.properties]
+[2011-09-29 17:15:03,664]DefaultListableBeanFactory.preInstantiateSingletons(555) | Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@82751: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,statuService,transferService,transferDao,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,messageSource,ftpTransferService,ftpStreamTransferService,ftpTransferControl,fileCronControl,xmlStream,xmlWriter,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,sqlMapClient]; root of factory hierarchy
+[2011-09-29 17:15:03,716]MLog.<clinit>(80) | MLog clients using log4j logging.
+[2011-09-29 17:15:03,819]C3P0Registry.banner(204) | Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[2011-09-29 17:15:03,844]DynamicPooledDataSourceManagerMBean.reinitialize(236) | MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge9at8i1e0h7491x8mhp3|16477d9] registered.
+[2011-09-29 17:15:04,167]FileCronControl.run(71) | cronQueue size : 0
+[2011-09-29 17:15:04,230]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 1
+[2011-09-29 17:15:04,230]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 2
+[2011-09-29 17:15:04,231]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 3
+[2011-09-29 17:15:04,231]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 4
+[2011-09-29 17:15:04,231]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 5
+[2011-09-29 17:15:04,232]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 6
+[2011-09-29 17:15:04,233]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 7
+[2011-09-29 17:15:04,233]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 8
+[2011-09-29 17:15:04,233]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 9
+[2011-09-29 17:15:04,233]BasicResourcePool.incrementPendingAcquires(404) | incremented pending_acquires: 10
+[2011-09-29 17:15:04,234]BasicResourcePool.<init>(289) | com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 config: [start -> 10; min -> 10; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+[2011-09-29 17:15:04,236]AbstractPoolBackedDataSource.getPoolManager(462) | Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9at8i1e0h7491x8mhp3|16477d9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9at8i1e0h7491x8mhp3|16477d9, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@192.168.100.10:1521:KRA3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1 from dual, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[2011-09-29 17:15:04,236]BasicResourcePool.prelimCheckoutResource(538) | acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+[2011-09-29 17:15:04,236]BasicResourcePool.awaitAvailable(1291) | awaitAvailable(): [unknown]
+[2011-09-29 17:15:04,237]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 0, unused: 0, excluded: 0]
+[2011-09-29 17:15:04,540]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,540]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,540]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,541]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 1, unused: 1, excluded: 0]
+[2011-09-29 17:15:04,542]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,542]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 9
+[2011-09-29 17:15:04,542]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,543]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 8
+[2011-09-29 17:15:04,543]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,544]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 7
+[2011-09-29 17:15:04,569]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,570]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,570]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 6
+[2011-09-29 17:15:04,575]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,576]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,576]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 5
+[2011-09-29 17:15:04,579]Connection.debug(27) | {conn-100000} Connection
+[2011-09-29 17:15:04,588]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,588]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,588]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 4
+[2011-09-29 17:15:04,593]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,594]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,594]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 3
+[2011-09-29 17:15:04,600]Connection.debug(27) | {conn-100000} Preparing Statement:       SELECT       *      FROM EQ_TBL      WHERE         EQ_ID like ?                AND     USE_YN = ?            
+[2011-09-29 17:15:04,606]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,606]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,607]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 2
+[2011-09-29 17:15:04,611]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,612]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,612]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 1
+[2011-09-29 17:15:04,617]C3P0PooledConnectionPool.acquireResource(217) | com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1e6f0ef.acquireResource() returning. 
+[2011-09-29 17:15:04,617]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,618]BasicResourcePool.decrementPendingAcquires(422) | decremented pending_acquires: 0
+[2011-09-29 17:15:04,790]PreparedStatement.debug(27) | {pstm-100001} Executing Statement:       SELECT       *      FROM EQ_TBL      WHERE         EQ_ID like ?                AND     USE_YN = ?            
+[2011-09-29 17:15:04,791]PreparedStatement.debug(27) | {pstm-100001} Parameters: [FTP%, Y]
+[2011-09-29 17:15:04,791]PreparedStatement.debug(27) | {pstm-100001} Types: [java.lang.String, java.lang.String]
+[2011-09-29 17:15:04,835]ResultSet.debug(27) | {rset-100002} ResultSet
+[2011-09-29 17:15:04,857]ResultSet.debug(27) | {rset-100002} Header: [EQ_ID, EQ_NM, EQ_GB, EQ_IP, JOB_ID, USE_YN, STATUS]
+[2011-09-29 17:15:04,858]ResultSet.debug(27) | {rset-100002} Result: [FTP01, Download FTP01, D, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:04,859]ResultSet.debug(27) | {rset-100002} Result: [FTP02, Download FTP02, D, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:04,860]ResultSet.debug(27) | {rset-100002} Result: [FTP03, Upload FTP03, U, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:04,861]ResultSet.debug(27) | {rset-100002} Result: [FTP04, Upload FTP04, U, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:04,888]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:04,888]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:04,889]NewProxyConnection.close(1260) | com.mchange.v2.c3p0.impl.NewProxyConnection@121f653: close() called more than once.
+[2011-09-29 17:15:04,922]BooleanConverter.setDefaultValue(336) | Setting default value: false
+[2011-09-29 17:15:04,922]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:04,922]BooleanConverter.convert(127) | Converting 'Boolean' value 'false' to type 'Boolean'
+[2011-09-29 17:15:04,923]BooleanConverter.convert(149) |     No conversion required, value is already a Boolean
+[2011-09-29 17:15:04,929]ByteConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,929]ByteConverter.convert(127) | Converting 'Integer' value '0' to type 'Byte'
+[2011-09-29 17:15:04,930]ByteConverter.convert(158) |     Converted to Byte value '0'
+[2011-09-29 17:15:04,931]CharacterConverter.setDefaultValue(336) | Setting default value:  
+[2011-09-29 17:15:04,931]CharacterConverter.convert(127) | Converting 'Character' value ' ' to type 'Character'
+[2011-09-29 17:15:04,932]CharacterConverter.convert(149) |     No conversion required, value is already a Character
+[2011-09-29 17:15:04,933]DoubleConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,934]DoubleConverter.convert(127) | Converting 'Integer' value '0' to type 'Double'
+[2011-09-29 17:15:04,934]DoubleConverter.convert(158) |     Converted to Double value '0.0'
+[2011-09-29 17:15:04,936]FloatConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,936]FloatConverter.convert(127) | Converting 'Integer' value '0' to type 'Float'
+[2011-09-29 17:15:04,937]FloatConverter.convert(158) |     Converted to Float value '0.0'
+[2011-09-29 17:15:04,938]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,938]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:04,939]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:04,940]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,941]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:04,941]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:04,942]ShortConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,943]ShortConverter.convert(127) | Converting 'Integer' value '0' to type 'Short'
+[2011-09-29 17:15:04,943]ShortConverter.convert(158) |     Converted to Short value '0'
+[2011-09-29 17:15:04,945]BigDecimalConverter.setDefaultValue(336) | Setting default value: 0.0
+[2011-09-29 17:15:04,945]BigDecimalConverter.convert(127) | Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+[2011-09-29 17:15:04,946]BigDecimalConverter.convert(149) |     No conversion required, value is already a BigDecimal
+[2011-09-29 17:15:04,947]BigIntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,948]BigIntegerConverter.convert(127) | Converting 'BigInteger' value '0' to type 'BigInteger'
+[2011-09-29 17:15:04,948]BigIntegerConverter.convert(149) |     No conversion required, value is already a BigInteger
+[2011-09-29 17:15:04,949]BooleanConverter.setDefaultValue(336) | Setting default value: false
+[2011-09-29 17:15:04,949]BooleanConverter.convert(127) | Converting 'Boolean' value 'false' to type 'Boolean'
+[2011-09-29 17:15:04,950]BooleanConverter.convert(149) |     No conversion required, value is already a Boolean
+[2011-09-29 17:15:04,950]ByteConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,951]ByteConverter.convert(127) | Converting 'Integer' value '0' to type 'Byte'
+[2011-09-29 17:15:04,951]ByteConverter.convert(158) |     Converted to Byte value '0'
+[2011-09-29 17:15:04,952]CharacterConverter.setDefaultValue(336) | Setting default value:  
+[2011-09-29 17:15:04,952]CharacterConverter.convert(127) | Converting 'Character' value ' ' to type 'Character'
+[2011-09-29 17:15:04,953]CharacterConverter.convert(149) |     No conversion required, value is already a Character
+[2011-09-29 17:15:04,953]DoubleConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,954]DoubleConverter.convert(127) | Converting 'Integer' value '0' to type 'Double'
+[2011-09-29 17:15:04,954]DoubleConverter.convert(158) |     Converted to Double value '0.0'
+[2011-09-29 17:15:04,954]FloatConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,955]FloatConverter.convert(127) | Converting 'Integer' value '0' to type 'Float'
+[2011-09-29 17:15:04,955]FloatConverter.convert(158) |     Converted to Float value '0.0'
+[2011-09-29 17:15:04,956]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,956]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:04,957]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:04,957]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,958]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:04,958]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:04,959]ShortConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:04,959]ShortConverter.convert(127) | Converting 'Integer' value '0' to type 'Short'
+[2011-09-29 17:15:04,959]ShortConverter.convert(158) |     Converted to Short value '0'
+[2011-09-29 17:15:04,961]StringConverter.setDefaultValue(336) | Setting default value: 
+[2011-09-29 17:15:04,961]StringConverter.convert(127) | Converting 'String' value '' to type 'String'
+[2011-09-29 17:15:04,974]ArrayConverter.setDefaultValue(336) | Setting default value: [Z@19360e7
+[2011-09-29 17:15:04,974]ArrayConverter.convert(127) | Converting 'boolean[]' value '[Z@19360e7' to type 'boolean[]'
+[2011-09-29 17:15:04,975]ArrayConverter.convert(149) |     No conversion required, value is already a boolean[]
+[2011-09-29 17:15:04,975]ArrayConverter.setDefaultValue(336) | Setting default value: [B@bf1f20
+[2011-09-29 17:15:04,976]ArrayConverter.convert(127) | Converting 'byte[]' value '[B@bf1f20' to type 'byte[]'
+[2011-09-29 17:15:04,976]ArrayConverter.convert(149) |     No conversion required, value is already a byte[]
+[2011-09-29 17:15:04,976]ArrayConverter.setDefaultValue(336) | Setting default value: [C@19480b8
+[2011-09-29 17:15:04,977]ArrayConverter.convert(127) | Converting 'char[]' value '[C@19480b8' to type 'char[]'
+[2011-09-29 17:15:04,977]ArrayConverter.convert(149) |     No conversion required, value is already a char[]
+[2011-09-29 17:15:04,978]ArrayConverter.setDefaultValue(336) | Setting default value: [D@8ef177
+[2011-09-29 17:15:04,978]ArrayConverter.convert(127) | Converting 'double[]' value '[D@8ef177' to type 'double[]'
+[2011-09-29 17:15:04,978]ArrayConverter.convert(149) |     No conversion required, value is already a double[]
+[2011-09-29 17:15:04,979]ArrayConverter.setDefaultValue(336) | Setting default value: [F@8ef455
+[2011-09-29 17:15:04,979]ArrayConverter.convert(127) | Converting 'float[]' value '[F@8ef455' to type 'float[]'
+[2011-09-29 17:15:04,980]ArrayConverter.convert(149) |     No conversion required, value is already a float[]
+[2011-09-29 17:15:04,980]ArrayConverter.setDefaultValue(336) | Setting default value: [I@14b2f1a
+[2011-09-29 17:15:04,981]ArrayConverter.convert(127) | Converting 'int[]' value '[I@14b2f1a' to type 'int[]'
+[2011-09-29 17:15:04,981]ArrayConverter.convert(149) |     No conversion required, value is already a int[]
+[2011-09-29 17:15:04,982]ArrayConverter.setDefaultValue(336) | Setting default value: [J@1017ca1
+[2011-09-29 17:15:04,982]ArrayConverter.convert(127) | Converting 'long[]' value '[J@1017ca1' to type 'long[]'
+[2011-09-29 17:15:04,982]ArrayConverter.convert(149) |     No conversion required, value is already a long[]
+[2011-09-29 17:15:04,983]ArrayConverter.setDefaultValue(336) | Setting default value: [S@9d5793
+[2011-09-29 17:15:04,983]ArrayConverter.convert(127) | Converting 'short[]' value '[S@9d5793' to type 'short[]'
+[2011-09-29 17:15:04,984]ArrayConverter.convert(149) |     No conversion required, value is already a short[]
+[2011-09-29 17:15:04,984]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.math.BigDecimal;@1e090ee
+[2011-09-29 17:15:04,985]ArrayConverter.convert(127) | Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@1e090ee' to type 'BigDecimal[]'
+[2011-09-29 17:15:04,985]ArrayConverter.convert(149) |     No conversion required, value is already a BigDecimal[]
+[2011-09-29 17:15:04,985]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.math.BigInteger;@1123eb0
+[2011-09-29 17:15:04,986]ArrayConverter.convert(127) | Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@1123eb0' to type 'BigInteger[]'
+[2011-09-29 17:15:04,986]ArrayConverter.convert(149) |     No conversion required, value is already a BigInteger[]
+[2011-09-29 17:15:04,987]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Boolean;@cd2192
+[2011-09-29 17:15:04,987]ArrayConverter.convert(127) | Converting 'Boolean[]' value '[Ljava.lang.Boolean;@cd2192' to type 'Boolean[]'
+[2011-09-29 17:15:04,987]ArrayConverter.convert(149) |     No conversion required, value is already a Boolean[]
+[2011-09-29 17:15:04,988]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Byte;@1de4376
+[2011-09-29 17:15:04,988]ArrayConverter.convert(127) | Converting 'Byte[]' value '[Ljava.lang.Byte;@1de4376' to type 'Byte[]'
+[2011-09-29 17:15:04,989]ArrayConverter.convert(149) |     No conversion required, value is already a Byte[]
+[2011-09-29 17:15:04,989]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Character;@1402eeb
+[2011-09-29 17:15:04,990]ArrayConverter.convert(127) | Converting 'Character[]' value '[Ljava.lang.Character;@1402eeb' to type 'Character[]'
+[2011-09-29 17:15:04,990]ArrayConverter.convert(149) |     No conversion required, value is already a Character[]
+[2011-09-29 17:15:04,991]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Double;@c38157
+[2011-09-29 17:15:04,991]ArrayConverter.convert(127) | Converting 'Double[]' value '[Ljava.lang.Double;@c38157' to type 'Double[]'
+[2011-09-29 17:15:04,991]ArrayConverter.convert(149) |     No conversion required, value is already a Double[]
+[2011-09-29 17:15:04,992]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Float;@1a6b16f
+[2011-09-29 17:15:04,992]ArrayConverter.convert(127) | Converting 'Float[]' value '[Ljava.lang.Float;@1a6b16f' to type 'Float[]'
+[2011-09-29 17:15:04,993]ArrayConverter.convert(149) |     No conversion required, value is already a Float[]
+[2011-09-29 17:15:04,993]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Integer;@5ce40
+[2011-09-29 17:15:04,993]ArrayConverter.convert(127) | Converting 'Integer[]' value '[Ljava.lang.Integer;@5ce40' to type 'Integer[]'
+[2011-09-29 17:15:04,994]ArrayConverter.convert(149) |     No conversion required, value is already a Integer[]
+[2011-09-29 17:15:04,994]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Long;@d9cbcb
+[2011-09-29 17:15:04,995]ArrayConverter.convert(127) | Converting 'Long[]' value '[Ljava.lang.Long;@d9cbcb' to type 'Long[]'
+[2011-09-29 17:15:04,995]ArrayConverter.convert(149) |     No conversion required, value is already a Long[]
+[2011-09-29 17:15:04,996]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Short;@1bef1ac
+[2011-09-29 17:15:04,996]ArrayConverter.convert(127) | Converting 'Short[]' value '[Ljava.lang.Short;@1bef1ac' to type 'Short[]'
+[2011-09-29 17:15:04,996]ArrayConverter.convert(149) |     No conversion required, value is already a Short[]
+[2011-09-29 17:15:04,997]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.String;@192425a
+[2011-09-29 17:15:04,997]ArrayConverter.convert(127) | Converting 'String[]' value '[Ljava.lang.String;@192425a' to type 'String[]'
+[2011-09-29 17:15:04,998]ArrayConverter.convert(149) |     No conversion required, value is already a String[]
+[2011-09-29 17:15:04,998]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.lang.Class;@1422384
+[2011-09-29 17:15:04,999]ArrayConverter.convert(127) | Converting 'Class[]' value '[Ljava.lang.Class;@1422384' to type 'Class[]'
+[2011-09-29 17:15:04,999]ArrayConverter.convert(149) |     No conversion required, value is already a Class[]
+[2011-09-29 17:15:05,000]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.util.Date;@129c445
+[2011-09-29 17:15:05,001]ArrayConverter.convert(127) | Converting 'Date[]' value '[Ljava.util.Date;@129c445' to type 'Date[]'
+[2011-09-29 17:15:05,001]ArrayConverter.convert(149) |     No conversion required, value is already a Date[]
+[2011-09-29 17:15:05,002]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.util.Calendar;@1388e5e
+[2011-09-29 17:15:05,002]ArrayConverter.convert(127) | Converting 'Calendar[]' value '[Ljava.util.Calendar;@1388e5e' to type 'Calendar[]'
+[2011-09-29 17:15:05,003]ArrayConverter.convert(149) |     No conversion required, value is already a Calendar[]
+[2011-09-29 17:15:05,003]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.io.File;@10613aa
+[2011-09-29 17:15:05,004]ArrayConverter.convert(127) | Converting 'java.io.File[]' value '[Ljava.io.File;@10613aa' to type 'java.io.File[]'
+[2011-09-29 17:15:05,005]ArrayConverter.convert(149) |     No conversion required, value is already a java.io.File[]
+[2011-09-29 17:15:05,005]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.sql.Date;@1275a34
+[2011-09-29 17:15:05,006]ArrayConverter.convert(127) | Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@1275a34' to type 'java.sql.Date[]'
+[2011-09-29 17:15:05,006]ArrayConverter.convert(149) |     No conversion required, value is already a java.sql.Date[]
+[2011-09-29 17:15:05,007]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.sql.Time;@1861086
+[2011-09-29 17:15:05,007]ArrayConverter.convert(127) | Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@1861086' to type 'java.sql.Time[]'
+[2011-09-29 17:15:05,008]ArrayConverter.convert(149) |     No conversion required, value is already a java.sql.Time[]
+[2011-09-29 17:15:05,008]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.sql.Timestamp;@1e779a1
+[2011-09-29 17:15:05,009]ArrayConverter.convert(127) | Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@1e779a1' to type 'java.sql.Timestamp[]'
+[2011-09-29 17:15:05,009]ArrayConverter.convert(149) |     No conversion required, value is already a java.sql.Timestamp[]
+[2011-09-29 17:15:05,010]ArrayConverter.setDefaultValue(336) | Setting default value: [Ljava.net.URL;@b8d09d
+[2011-09-29 17:15:05,011]ArrayConverter.convert(127) | Converting 'java.net.URL[]' value '[Ljava.net.URL;@b8d09d' to type 'java.net.URL[]'
+[2011-09-29 17:15:05,011]ArrayConverter.convert(149) |     No conversion required, value is already a java.net.URL[]
+[2011-09-29 17:15:05,036]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,038]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,039]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,040]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,041]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,041]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,042]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,043]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,043]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,044]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@189b939, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,055]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,056]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,057]StringConverter.convert(127) | Converting 'String' value 'D' to type 'String'
+[2011-09-29 17:15:05,057]StringConverter.convert(127) | Converting 'String' value 'FTP01' to type 'String'
+[2011-09-29 17:15:05,058]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,058]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,059]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,060]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,060]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,061]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,061]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,062]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,062]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,063]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,063]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,065]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,066]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,066]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,067]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,067]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,067]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,068]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,068]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,069]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,069]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@19c5048, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,070]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,070]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,070]StringConverter.convert(127) | Converting 'String' value 'D' to type 'String'
+[2011-09-29 17:15:05,071]StringConverter.convert(127) | Converting 'String' value 'FTP02' to type 'String'
+[2011-09-29 17:15:05,071]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,072]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,072]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,072]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,073]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,074]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,074]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,074]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,075]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,075]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,076]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,076]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,077]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,077]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,078]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,078]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,078]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,079]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,079]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,080]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,080]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@15a3a1, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,081]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,081]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,081]StringConverter.convert(127) | Converting 'String' value 'U' to type 'String'
+[2011-09-29 17:15:05,082]StringConverter.convert(127) | Converting 'String' value 'FTP03' to type 'String'
+[2011-09-29 17:15:05,082]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,083]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,083]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,083]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,084]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,084]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,085]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,085]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,086]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,086]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,086]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,087]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,087]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,088]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,088]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,088]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,089]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,089]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,090]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,090]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,090]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@a9a32c, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,091]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,091]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,091]StringConverter.convert(127) | Converting 'String' value 'U' to type 'String'
+[2011-09-29 17:15:05,092]StringConverter.convert(127) | Converting 'String' value 'FTP04' to type 'String'
+[2011-09-29 17:15:05,092]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,093]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,093]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,094]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,094]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,094]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,095]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,095]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,096]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,096]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,096]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,097]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,097]Connection.debug(27) | {conn-100003} Connection
+[2011-09-29 17:15:05,098]Connection.debug(27) | {conn-100003} Preparing Statement:       SELECT       *      FROM EQ_TBL      WHERE         EQ_ID like ?        AND     EQ_GB = ?            AND     USE_YN = ?            
+[2011-09-29 17:15:05,099]PreparedStatement.debug(27) | {pstm-100004} Executing Statement:       SELECT       *      FROM EQ_TBL      WHERE         EQ_ID like ?        AND     EQ_GB = ?            AND     USE_YN = ?            
+[2011-09-29 17:15:05,099]PreparedStatement.debug(27) | {pstm-100004} Parameters: [FTP%, U, Y]
+[2011-09-29 17:15:05,100]PreparedStatement.debug(27) | {pstm-100004} Types: [java.lang.String, java.lang.String, java.lang.String]
+[2011-09-29 17:15:05,102]ResultSet.debug(27) | {rset-100005} ResultSet
+[2011-09-29 17:15:05,102]ResultSet.debug(27) | {rset-100005} Header: [EQ_ID, EQ_NM, EQ_GB, EQ_IP, JOB_ID, USE_YN, STATUS]
+[2011-09-29 17:15:05,103]ResultSet.debug(27) | {rset-100005} Result: [FTP03, Upload FTP03, U, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:05,103]ResultSet.debug(27) | {rset-100005} Result: [FTP04, Upload FTP04, U, 192.168.100.15, null, Y, null]
+[2011-09-29 17:15:05,104]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,104]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:05,105]NewProxyConnection.close(1260) | com.mchange.v2.c3p0.impl.NewProxyConnection@1b8119a: close() called more than once.
+[2011-09-29 17:15:05,105]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,106]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,106]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,106]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,107]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,107]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,108]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,108]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,108]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,109]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,109]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@48bc64, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,110]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,110]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,110]StringConverter.convert(127) | Converting 'String' value 'U' to type 'String'
+[2011-09-29 17:15:05,111]StringConverter.convert(127) | Converting 'String' value 'FTP03' to type 'String'
+[2011-09-29 17:15:05,111]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,112]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,112]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,112]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,113]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,113]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,114]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,114]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,114]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,115]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,115]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,116]SqlTimestampConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,117]SqlDateConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,117]SqlTimeConverter.setDefaultValue(336) | Setting default value: null
+[2011-09-29 17:15:05,118]LongConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,118]LongConverter.convert(127) | Converting 'Integer' value '0' to type 'Long'
+[2011-09-29 17:15:05,118]LongConverter.convert(158) |     Converted to Long value '0'
+[2011-09-29 17:15:05,119]IntegerConverter.setDefaultValue(336) | Setting default value: 0
+[2011-09-29 17:15:05,119]IntegerConverter.convert(127) | Converting 'Integer' value '0' to type 'Integer'
+[2011-09-29 17:15:05,120]IntegerConverter.convert(149) |     No conversion required, value is already a Integer
+[2011-09-29 17:15:05,120]BeanUtils.copyProperties(246) | BeanUtils.copyProperties(kr.co.d2net.commons.dto.FtpConfig@87ad67, kr.co.d2net.commons.dto.FtpConfig@df824a)
+[2011-09-29 17:15:05,120]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,121]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,121]StringConverter.convert(127) | Converting 'String' value 'U' to type 'String'
+[2011-09-29 17:15:05,122]StringConverter.convert(127) | Converting 'String' value 'FTP04' to type 'String'
+[2011-09-29 17:15:05,122]StringConverter.convert(127) | Converting value 'null' to type 'String'
+[2011-09-29 17:15:05,122]StringConverter.handleMissing(303) |     Using default value ''
+[2011-09-29 17:15:05,123]StringConverter.convert(127) | Converting 'String' value '192.168.100.15' to type 'String'
+[2011-09-29 17:15:05,123]StringConverter.convert(127) | Converting 'String' value 'adminK2' to type 'String'
+[2011-09-29 17:15:05,124]StringConverter.convert(127) | Converting 'String' value 'administrator' to type 'String'
+[2011-09-29 17:15:05,124]StringConverter.convert(127) | Converting 'String' value 'X:\mp2' to type 'String'
+[2011-09-29 17:15:05,124]SqlTimestampConverter.convert(127) | Converting value 'null' to type 'java.sql.Timestamp'
+[2011-09-29 17:15:05,125]SqlTimestampConverter.handleMissing(303) |     Using default value 'null'
+[2011-09-29 17:15:05,125]StringConverter.convert(127) | Converting 'String' value '/MXF/default' to type 'String'
+[2011-09-29 17:15:05,126]LongConverter.convert(127) | Converting value 'null' to type 'Long'
+[2011-09-29 17:15:05,126]LongConverter.handleMissing(303) |     Using default Long value '0'
+[2011-09-29 17:15:05,128]FtpTransferControl.run(156) | putQueue size : 0
+[2011-09-29 17:15:05,128]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,129]Connection.debug(27) | {conn-100006} Connection
+[2011-09-29 17:15:05,129]Connection.debug(27) | {conn-100006} Preparing Statement:      SELECT A.* FROM (    SELECT     TRSF.TF_ID, TRSF.CT_ID, GET_CTI_PATH(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) FL_PATH,      TRSF.TF_GB, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.TF_CD, TRSF.REG_DTM,                 (CASE TRSF.STATUS WHEN 'W' THEN 0 WHEN 'Q' THEN 1 WHEN 'I' THEN 2 WHEN  'E' THEN 3 ELSE 4 END) ORD    FROM (        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'D' TF_GB FROM CS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4        UNION        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'U' TF_GB FROM VS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4    ) TRSF   ) A    WHERE ROWNUM <= ? AND FL_PATH IS NOT NULL   ORDER BY A.ORD ASC    
+[2011-09-29 17:15:05,130]PreparedStatement.debug(27) | {pstm-100007} Executing Statement:      SELECT A.* FROM (    SELECT     TRSF.TF_ID, TRSF.CT_ID, GET_CTI_PATH(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) FL_PATH,      TRSF.TF_GB, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.TF_CD, TRSF.REG_DTM,                 (CASE TRSF.STATUS WHEN 'W' THEN 0 WHEN 'Q' THEN 1 WHEN 'I' THEN 2 WHEN  'E' THEN 3 ELSE 4 END) ORD    FROM (        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'D' TF_GB FROM CS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4        UNION        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'U' TF_GB FROM VS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4    ) TRSF   ) A    WHERE ROWNUM <= ? AND FL_PATH IS NOT NULL   ORDER BY A.ORD ASC    
+[2011-09-29 17:15:05,131]PreparedStatement.debug(27) | {pstm-100007} Parameters: [2]
+[2011-09-29 17:15:05,131]PreparedStatement.debug(27) | {pstm-100007} Types: [java.lang.Integer]
+[2011-09-29 17:15:05,139]ResultSet.debug(27) | {rset-100008} ResultSet
+[2011-09-29 17:15:05,140]ResultSet.debug(27) | {rset-100008} Header: [TF_ID, CT_ID, TF_CD, FL_PATH, CT_NM, TF_GB, REG_DTM]
+[2011-09-29 17:15:05,140]ResultSet.debug(27) | {rset-100008} Result: [527, P0000007, 20110929_144849   , /etc/, 으헝헝, D, 2011-09-29 14:50:04.0]
+[2011-09-29 17:15:05,141]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,141]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:05,141]NewProxyConnection.close(1260) | com.mchange.v2.c3p0.impl.NewProxyConnection@10eeb26: close() called more than once.
+[2011-09-29 17:15:05,142]FtpTransferControl.run(205) | ################ ftp put data ################
+[2011-09-29 17:15:05,142]FtpTransferControl.run(206) | eq_id : FTP03
+[2011-09-29 17:15:05,143]FtpTransferControl.run(207) | ct_id : P0000007
+[2011-09-29 17:15:05,143]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,143]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,143]FtpTransferControl.run(208) | tf_id : 527
+[2011-09-29 17:15:05,144]FtpTransferControl.run(209) | tf_cd : 20110929_144849   
+[2011-09-29 17:15:05,144]FtpTransferControl.run(210) | fl_path: /etc/
+[2011-09-29 17:15:05,167]Connection.debug(27) | {conn-100009} Connection
+[2011-09-29 17:15:05,172]Connection.debug(27) | {conn-100009} Preparing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                  ,       RECOUNT = ?                              WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,173]PreparedStatement.debug(27) | {pstm-100010} Executing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                  ,       RECOUNT = ?                              WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,174]PreparedStatement.debug(27) | {pstm-100010} Parameters: [2011-09-29 17:15:05.143, Q, null, P0000007, 527]
+[2011-09-29 17:15:05,174]PreparedStatement.debug(27) | {pstm-100010} Types: [java.sql.Timestamp, java.lang.String, null, java.lang.String, java.lang.Long]
+[2011-09-29 17:15:05,182]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,182]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN.
+[2011-09-29 17:15:05,184]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,201]FTPClient.<init>(847) | Class: com.enterprisedt.net.ftp.FTPClient
+Version: 2.0.3
+Build timestamp: 6-Jun-2008 14:04:32 EST
+Java version: 1.6.0_18
+CLASSPATH: D:\Workspace\usr4\TransferManager\target\classes;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.aop\3.0.4.RELEASE\org.springframework.aop-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.beans\3.0.4.RELEASE\org.springframework.beans-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.core\3.0.4.RELEASE\org.springframework.core-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.asm\3.0.4.RELEASE\org.springframework.asm-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.aspects\3.0.4.RELEASE\org.springframework.aspects-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.context\3.0.4.RELEASE\org.springframework.context-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.expression\3.0.4.RELEASE\org.springframework.expression-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.context.support\3.0.4.RELEASE\org.springframework.context.support-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.jdbc\3.0.4.RELEASE\org.springframework.jdbc-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.transaction\3.0.4.RELEASE\org.springframework.transaction-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.jms\3.0.4.RELEASE\org.springframework.jms-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.orm\3.0.4.RELEASE\org.springframework.orm-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\jcl-over-slf4j\1.6.1\jcl-over-slf4j-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\log4j\log4j\1.2.16\log4j-1.2.16.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-fileupload\commons-fileupload\1.2.1\commons-fileupload-1.2.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-net\commons-net\2.0\commons-net-2.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-beanutils\commons-beanutils\1.8.2\commons-beanutils-1.8.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-io\commons-io\1.4\commons-io-1.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-pool\commons-pool\1.5.4\commons-pool-1.5.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\oro\oro\2.0.8\oro-2.0.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-digester\commons-digester\2.0\commons-digester-2.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjlib\1.6.2\aspectjlib-1.6.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjtools\1.6.8\aspectjtools-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\jdom\jdom\1.1\jdom-1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\thoughtworks\xstream\xstream\1.3.1\xstream-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;D:\OpenSource\apache-maven-2.1.0\Repo\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;D:\OpenSource\apache-maven-2.1.0\Repo\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\antlr\antlr\3.0.1\antlr-3.0.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\antlr\stringtemplate\3.1-b1\stringtemplate-3.1-b1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;D:\OpenSource\apache-maven-2.1.0\Repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\tuckey\urlrewritefilter\3.1.0\urlrewritefilter-3.1.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\oracle\ojdbc6\11.1.0.7.0-Produc\ojdbc6-11.1.0.7.0-Produc.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\quartz-scheduler\quartz\1.8.4\quartz-1.8.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\javax\transaction\jta\1.1\jta-1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\codehaus\castor\castor-xml\1.3.1\castor-xml-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\codehaus\castor\castor-core\1.3.1\castor-core-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\eclipse\swt\win32\win32\x86\3.3.0-v3346\x86-3.3.0-v3346.jar;D:\OpenSource\apache-maven-2.1.0\Repo\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\enterprisedt\ftp\1.0.0\ftp-1.0.0.jar
+OS name: Windows Server 2008
+OS arch: x86
+OS version: 6.0
+
+[2011-09-29 17:15:05,206]FileTransferClient.connect(367) | Configured client
+[2011-09-29 17:15:05,207]FTPClient.connect(862) | Connecting to /192.168.100.15:21
+[2011-09-29 17:15:05,216]SocketUtils.createSocket(93) | Invoking connect with timeout=60000
+[2011-09-29 17:15:05,218]SocketUtils.createSocket(95) | Connected successfully
+[2011-09-29 17:15:05,219]FTPControlSocket.log(1111) | 220 Grass Valley (Secure) FTP Server (7.3.8.1466) ready.
+[2011-09-29 17:15:05,220]FileTransferClient.connect(369) | Client connected
+[2011-09-29 17:15:05,221]FileTransferClient.connect(371) | Logging in
+[2011-09-29 17:15:05,222]FTPControlSocket.log(1111) | ---> USER administrator
+[2011-09-29 17:15:05,222]FTPControlSocket.log(1111) | 331 Password required for user administrator.
+[2011-09-29 17:15:05,222]FTPControlSocket.log(1111) | ---> PASS ********
+[2011-09-29 17:15:05,226]FTPControlSocket.log(1111) | 230 Logged in, and aspect successfully set to MOVIE, stream mode GXF.
+[2011-09-29 17:15:05,226]FileTransferClient.connect(373) | Logged in
+[2011-09-29 17:15:05,226]FTPControlSocket.log(1111) | ---> TYPE I
+[2011-09-29 17:15:05,231]FTPControlSocket.log(1111) | 200 Type set to IMAGE.
+[2011-09-29 17:15:05,231]FtpTransferImpl.uploadFile(113) | [upload] ftp conneted!! - ip:192.168.100.15, user: administrator
+[2011-09-29 17:15:05,232]FtpTransferImpl.uploadFile(123) | MXF File Not Found! - X:\mp2\etc\20110929_144849   .mxf
+[2011-09-29 17:15:05,233]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,233]Connection.debug(27) | {conn-100011} Connection
+[2011-09-29 17:15:05,235]Connection.debug(27) | {conn-100011} Preparing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                        ,       RECOUNT = nvl(RECOUNT,0) + 1                        WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,236]PreparedStatement.debug(27) | {pstm-100012} Executing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                        ,       RECOUNT = nvl(RECOUNT,0) + 1                        WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,236]PreparedStatement.debug(27) | {pstm-100012} Parameters: [2011-09-29 17:15:05.233, E, P0000007, 527]
+[2011-09-29 17:15:05,236]PreparedStatement.debug(27) | {pstm-100012} Types: [java.sql.Timestamp, java.lang.String, java.lang.String, java.lang.Long]
+[2011-09-29 17:15:05,238]Connection.debug(27) | {conn-100013} Connection
+[2011-09-29 17:15:05,240]Connection.debug(27) | {conn-100013} Preparing Statement:       UPDATE EQ_TBL SET STATUS = ?      ,       JOB_ID = ?                  WHERE eq_id = ?     
+[2011-09-29 17:15:05,240]PreparedStatement.debug(27) | {pstm-100014} Executing Statement:       UPDATE EQ_TBL SET STATUS = ?      ,       JOB_ID = ?                  WHERE eq_id = ?     
+[2011-09-29 17:15:05,241]PreparedStatement.debug(27) | {pstm-100014} Parameters: [, , FTP03]
+[2011-09-29 17:15:05,241]PreparedStatement.debug(27) | {pstm-100014} Types: [java.lang.String, java.lang.String, java.lang.String]
+[2011-09-29 17:15:05,245]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,245]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN.
+[2011-09-29 17:15:05,245]FTPControlSocket.log(1111) | ---> QUIT
+[2011-09-29 17:15:05,246]FTPControlSocket.log(1111) | 221 Goodbye.
+[2011-09-29 17:15:05,247]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,682]FtpTransferControl.run(170) | downQueue size : 0
+[2011-09-29 17:15:05,682]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,682]Connection.debug(27) | {conn-100015} Connection
+[2011-09-29 17:15:05,683]Connection.debug(27) | {conn-100015} Preparing Statement:      SELECT A.* FROM (    SELECT     TRSF.TF_ID, TRSF.CT_ID, GET_CTI_PATH(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) FL_PATH,      TRSF.TF_GB, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.TF_CD, TRSF.REG_DTM,                 (CASE TRSF.STATUS WHEN 'W' THEN 0 WHEN 'Q' THEN 1 WHEN 'I' THEN 2 WHEN  'E' THEN 3 ELSE 4 END) ORD    FROM (        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'D' TF_GB FROM CS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4        UNION        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'U' TF_GB FROM VS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4    ) TRSF   ) A    WHERE ROWNUM <= ? AND FL_PATH IS NOT NULL   ORDER BY A.ORD ASC    
+[2011-09-29 17:15:05,683]PreparedStatement.debug(27) | {pstm-100016} Executing Statement:      SELECT A.* FROM (    SELECT     TRSF.TF_ID, TRSF.CT_ID, GET_CTI_PATH(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) FL_PATH,      TRSF.TF_GB, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.TF_CD, TRSF.REG_DTM,                 (CASE TRSF.STATUS WHEN 'W' THEN 0 WHEN 'Q' THEN 1 WHEN 'I' THEN 2 WHEN  'E' THEN 3 ELSE 4 END) ORD    FROM (        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'D' TF_GB FROM CS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4        UNION        SELECT TF_ID, CT_ID, STATUS, progress, nvl(RECOUNT, 0) RECOUNT, REG_DTM, TF_CD, 'U' TF_GB FROM VS_TRSF_TBL        WHERE STATUS NOT IN('Q','C','I') AND USE_YN = 'Y' AND RECOUNT < 4    ) TRSF   ) A    WHERE ROWNUM <= ? AND FL_PATH IS NOT NULL   ORDER BY A.ORD ASC    
+[2011-09-29 17:15:05,684]PreparedStatement.debug(27) | {pstm-100016} Parameters: [2]
+[2011-09-29 17:15:05,684]PreparedStatement.debug(27) | {pstm-100016} Types: [java.lang.Integer]
+[2011-09-29 17:15:05,688]ResultSet.debug(27) | {rset-100017} ResultSet
+[2011-09-29 17:15:05,688]ResultSet.debug(27) | {rset-100017} Header: [TF_ID, CT_ID, TF_CD, FL_PATH, CT_NM, TF_GB, REG_DTM]
+[2011-09-29 17:15:05,689]ResultSet.debug(27) | {rset-100017} Result: [527, P0000007, 20110929_144849   , /etc/, 으헝헝, D, 2011-09-29 14:50:04.0]
+[2011-09-29 17:15:05,689]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,690]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN.
+[2011-09-29 17:15:05,690]NewProxyConnection.close(1260) | com.mchange.v2.c3p0.impl.NewProxyConnection@1a4036f: close() called more than once.
+[2011-09-29 17:15:05,690]FtpTransferControl.run(246) | ################ ftp down data ################
+[2011-09-29 17:15:05,690]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,691]FtpTransferControl.run(247) | eq_id : FTP01
+[2011-09-29 17:15:05,691]Connection.debug(27) | {conn-100018} Connection
+[2011-09-29 17:15:05,691]FtpTransferControl.run(248) | ct_id : P0000007
+[2011-09-29 17:15:05,692]FtpTransferControl.run(249) | tf_id : 527
+[2011-09-29 17:15:05,692]FtpTransferControl.run(250) | tf_cd : 20110929_144849   
+[2011-09-29 17:15:05,692]FtpTransferControl.run(251) | fl_path: /etc/
+[2011-09-29 17:15:05,691]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11ed166] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,692]Connection.debug(27) | {conn-100018} Preparing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                  ,       RECOUNT = ?                              WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,693]FTPClient.<init>(847) | Class: com.enterprisedt.net.ftp.FTPClient
+Version: 2.0.3
+Build timestamp: 6-Jun-2008 14:04:32 EST
+Java version: 1.6.0_18
+CLASSPATH: D:\Workspace\usr4\TransferManager\target\classes;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.aop\3.0.4.RELEASE\org.springframework.aop-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.beans\3.0.4.RELEASE\org.springframework.beans-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.core\3.0.4.RELEASE\org.springframework.core-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.asm\3.0.4.RELEASE\org.springframework.asm-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.aspects\3.0.4.RELEASE\org.springframework.aspects-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.context\3.0.4.RELEASE\org.springframework.context-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.expression\3.0.4.RELEASE\org.springframework.expression-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.context.support\3.0.4.RELEASE\org.springframework.context.support-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.jdbc\3.0.4.RELEASE\org.springframework.jdbc-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.transaction\3.0.4.RELEASE\org.springframework.transaction-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.jms\3.0.4.RELEASE\org.springframework.jms-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\springframework\org.springframework.orm\3.0.4.RELEASE\org.springframework.orm-3.0.4.RELEASE.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\jcl-over-slf4j\1.6.1\jcl-over-slf4j-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\log4j\log4j\1.2.16\log4j-1.2.16.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-fileupload\commons-fileupload\1.2.1\commons-fileupload-1.2.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-net\commons-net\2.0\commons-net-2.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-beanutils\commons-beanutils\1.8.2\commons-beanutils-1.8.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-io\commons-io\1.4\commons-io-1.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-pool\commons-pool\1.5.4\commons-pool-1.5.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\oro\oro\2.0.8\oro-2.0.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\commons-digester\commons-digester\2.0\commons-digester-2.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjlib\1.6.2\aspectjlib-1.6.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\aspectj\aspectjtools\1.6.8\aspectjtools-1.6.8.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\jdom\jdom\1.1\jdom-1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\thoughtworks\xstream\xstream\1.3.1\xstream-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;D:\OpenSource\apache-maven-2.1.0\Repo\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;D:\OpenSource\apache-maven-2.1.0\Repo\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\antlr\antlr\3.0.1\antlr-3.0.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\antlr\stringtemplate\3.1-b1\stringtemplate-3.1-b1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;D:\OpenSource\apache-maven-2.1.0\Repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\tuckey\urlrewritefilter\3.1.0\urlrewritefilter-3.1.0.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\oracle\ojdbc6\11.1.0.7.0-Produc\ojdbc6-11.1.0.7.0-Produc.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\quartz-scheduler\quartz\1.8.4\quartz-1.8.4.jar;D:\OpenSource\apache-maven-2.1.0\Repo\javax\transaction\jta\1.1\jta-1.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\codehaus\castor\castor-xml\1.3.1\castor-xml-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\codehaus\castor\castor-core\1.3.1\castor-core-1.3.1.jar;D:\OpenSource\apache-maven-2.1.0\Repo\org\eclipse\swt\win32\win32\x86\3.3.0-v3346\x86-3.3.0-v3346.jar;D:\OpenSource\apache-maven-2.1.0\Repo\c3p0\c3p0\0.9.1.2\c3p0-0.9.1.2.jar;D:\OpenSource\apache-maven-2.1.0\Repo\com\enterprisedt\ftp\1.0.0\ftp-1.0.0.jar
+OS name: Windows Server 2008
+OS arch: x86
+OS version: 6.0
+
+[2011-09-29 17:15:05,694]FileTransferClient.connect(367) | Configured client
+[2011-09-29 17:15:05,694]PreparedStatement.debug(27) | {pstm-100019} Executing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                  ,       RECOUNT = ?                              WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,694]FTPClient.connect(862) | Connecting to /192.168.100.15:21
+[2011-09-29 17:15:05,694]PreparedStatement.debug(27) | {pstm-100019} Parameters: [2011-09-29 17:15:05.691, Q, null, P0000007, 527]
+[2011-09-29 17:15:05,695]SocketUtils.createSocket(93) | Invoking connect with timeout=60000
+[2011-09-29 17:15:05,695]PreparedStatement.debug(27) | {pstm-100019} Types: [java.sql.Timestamp, java.lang.String, null, java.lang.String, java.lang.Long]
+[2011-09-29 17:15:05,696]SocketUtils.createSocket(95) | Connected successfully
+[2011-09-29 17:15:05,697]FTPControlSocket.log(1111) | 220 Grass Valley (Secure) FTP Server (7.3.8.1466) ready.
+[2011-09-29 17:15:05,697]FileTransferClient.connect(369) | Client connected
+[2011-09-29 17:15:05,697]FileTransferClient.connect(371) | Logging in
+[2011-09-29 17:15:05,697]FTPControlSocket.log(1111) | ---> USER administrator
+[2011-09-29 17:15:05,698]FTPControlSocket.log(1111) | 331 Password required for user administrator.
+[2011-09-29 17:15:05,698]FTPControlSocket.log(1111) | ---> PASS ********
+[2011-09-29 17:15:05,700]FTPControlSocket.log(1111) | 230 Logged in, and aspect successfully set to MOVIE, stream mode GXF.
+[2011-09-29 17:15:05,700]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:05,700]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,700]FileTransferClient.connect(373) | Logged in
+[2011-09-29 17:15:05,701]FTPControlSocket.log(1111) | ---> TYPE I
+[2011-09-29 17:15:05,702]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:05,704]FTPControlSocket.log(1111) | 200 Type set to IMAGE.
+[2011-09-29 17:15:05,704]FtpTransferImpl.downloadFile(41) | [download] ftp conneted!! - ip:192.168.100.15, user: administrator
+[2011-09-29 17:15:05,704]FTPControlSocket.log(1111) | ---> TYPE I
+[2011-09-29 17:15:05,705]FTPControlSocket.log(1111) | 200 Type set to IMAGE.
+[2011-09-29 17:15:05,705]FTPControlSocket.log(1111) | ---> CWD /MXF/default
+[2011-09-29 17:15:05,708]FTPControlSocket.log(1111) | 250 Change of directory to V:/MXF/default/ successful, xfer mode MXF.
+[2011-09-29 17:15:05,709]FTPControlSocket.log(1111) | ---> SIZE 20110929_144849   
+[2011-09-29 17:15:05,711]FTPControlSocket.log(1111) | 550 "/explodedFile/V:/default/20110929_144849   ": Asset does not exist.
+[2011-09-29 17:15:05,711]FTPControlSocket.validateReply(1068) | Expected reply code = [213]
+[2011-09-29 17:15:05,712]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,712]Connection.debug(27) | {conn-100020} Connection
+[2011-09-29 17:15:05,713]Connection.debug(27) | {conn-100020} Preparing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                        ,       RECOUNT = nvl(RECOUNT,0) + 1                        WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,714]PreparedStatement.debug(27) | {pstm-100021} Executing Statement:       UPDATE CS_TRSF_TBL SET MOD_DTM = ?      ,       STATUS = ?                        ,       RECOUNT = nvl(RECOUNT,0) + 1                        WHERE                       CT_ID = ?                      AND            TF_ID = ?                   
+[2011-09-29 17:15:05,714]PreparedStatement.debug(27) | {pstm-100021} Parameters: [2011-09-29 17:15:05.712, E, P0000007, 527]
+[2011-09-29 17:15:05,714]PreparedStatement.debug(27) | {pstm-100021} Types: [java.sql.Timestamp, java.lang.String, java.lang.String, java.lang.Long]
+[2011-09-29 17:15:05,716]Connection.debug(27) | {conn-100022} Connection
+[2011-09-29 17:15:05,716]Connection.debug(27) | {conn-100022} Preparing Statement:       UPDATE EQ_TBL SET STATUS = ?      ,       JOB_ID = ?                  WHERE eq_id = ?     
+[2011-09-29 17:15:05,717]PreparedStatement.debug(27) | {pstm-100023} Executing Statement:       UPDATE EQ_TBL SET STATUS = ?      ,       JOB_ID = ?                  WHERE eq_id = ?     
+[2011-09-29 17:15:05,717]PreparedStatement.debug(27) | {pstm-100023} Parameters: [, , FTP01]
+[2011-09-29 17:15:05,717]PreparedStatement.debug(27) | {pstm-100023} Types: [java.lang.String, java.lang.String, java.lang.String]
+[2011-09-29 17:15:05,724]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:05,724]FTPControlSocket.log(1111) | ---> QUIT
+[2011-09-29 17:15:05,724]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:05,725]FTPControlSocket.log(1111) | 221 Goodbye.
+[2011-09-29 17:15:05,726]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:06,538]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:06,539]Connection.debug(27) | {conn-100024} Connection
+[2011-09-29 17:15:06,540]Connection.debug(27) | {conn-100024} Preparing Statement:       SELECT    A.EQ_GB eqGb, A.EQ_IP eqIp, A.waitQ, A.useQ, B.jobId   FROM (     SELECT         EQ_GB, EQ_IP, COUNT(EQ_ID) waitQ, SUM(CASE STATUS WHEN 'I' THEN 1 ELSE 0 END) useQ     FROM EQ_TBL           WHERE EQ_ID like 'FTP%'     GROUP BY EQ_GB, EQ_IP   ) A INNER JOIN (     SELECT         EQ_GB, SUBSTR(max(sys_connect_by_path((         CASE WHEN JOB_ID IS NOT NULL THEN '['||JOB_ID||']' ELSE ' ' end), ',')), 2) jobId     FROM (         SELECT             EQ_GB, JOB_ID, ROW_NUMBER() OVER (PARTITION BY EQ_GB ORDER BY JOB_ID) rnum         FROM EQ_TBL               WHERE EQ_ID like 'FTP%'     )     START WITH rnum = 1     CONNECT BY PRIOR rnum = rnum -1 AND PRIOR EQ_GB = EQ_GB     GROUP BY EQ_GB   ) B ON A.EQ_GB = B.EQ_GB   ORDER BY A.EQ_GB ASC     
+[2011-09-29 17:15:06,540]PreparedStatement.debug(27) | {pstm-100025} Executing Statement:       SELECT    A.EQ_GB eqGb, A.EQ_IP eqIp, A.waitQ, A.useQ, B.jobId   FROM (     SELECT         EQ_GB, EQ_IP, COUNT(EQ_ID) waitQ, SUM(CASE STATUS WHEN 'I' THEN 1 ELSE 0 END) useQ     FROM EQ_TBL           WHERE EQ_ID like 'FTP%'     GROUP BY EQ_GB, EQ_IP   ) A INNER JOIN (     SELECT         EQ_GB, SUBSTR(max(sys_connect_by_path((         CASE WHEN JOB_ID IS NOT NULL THEN '['||JOB_ID||']' ELSE ' ' end), ',')), 2) jobId     FROM (         SELECT             EQ_GB, JOB_ID, ROW_NUMBER() OVER (PARTITION BY EQ_GB ORDER BY JOB_ID) rnum         FROM EQ_TBL               WHERE EQ_ID like 'FTP%'     )     START WITH rnum = 1     CONNECT BY PRIOR rnum = rnum -1 AND PRIOR EQ_GB = EQ_GB     GROUP BY EQ_GB   ) B ON A.EQ_GB = B.EQ_GB   ORDER BY A.EQ_GB ASC     
+[2011-09-29 17:15:06,541]PreparedStatement.debug(27) | {pstm-100025} Parameters: []
+[2011-09-29 17:15:06,541]PreparedStatement.debug(27) | {pstm-100025} Types: []
+[2011-09-29 17:15:06,544]ResultSet.debug(27) | {rset-100026} ResultSet
+[2011-09-29 17:15:06,550]ResultSet.debug(27) | {rset-100026} Header: [EQGB, EQIP, WAITQ, USEQ, JOBID]
+[2011-09-29 17:15:06,551]ResultSet.debug(27) | {rset-100026} Result: [D, 192.168.100.15, 2, 0,  , ]
+[2011-09-29 17:15:06,552]ResultSet.debug(27) | {rset-100026} Result: [U, 192.168.100.15, 2, 0,  , ]
+[2011-09-29 17:15:06,553]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:06,553]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:06,555]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
+[2011-09-29 17:15:06,609]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:06,610]Connection.debug(27) | {conn-100027} Connection
+[2011-09-29 17:15:06,611]Connection.debug(27) | {conn-100027} Preparing Statement:            SELECT    TRSF.CT_ID, TRSF.TF_CD,       (CASE TRSF.STATUS            WHEN 'Q' THEN '요청'           WHEN 'W' THEN '대기'           WHEN 'I' THEN '진행'           WHEN 'C' THEN '완료'           WHEN 'E' THEN '실패'       ELSE '' END) STATUS,        (CASE TRSF.TF_GB           WHEN 'U' THEN '업로드'           WHEN 'D' THEN '다운로드'       ELSE '' END) TF_GB,        TRSF.PROGRESS, TRSF.RECOUNT, TRSF.REG_DTM, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.PRIORS   FROM (       SELECT tf_id, ct_id, tf_cd, STATUS, progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'D' TF_GB FROM CS_TRSF_TBL       UNION       SELECT tf_id, ct_id, tf_cd, STATUS, progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'U' TF_GB FROM VS_TRSF_TBL   ) TRSF   WHERE TRSF.USE_YN='Y' AND TRSF.STATUS <> 'C'   ORDER BY TRSF.PRIORS ASC, TRSF.TF_ID DESC       
+[2011-09-29 17:15:06,616]PreparedStatement.debug(27) | {pstm-100028} Executing Statement:            SELECT    TRSF.CT_ID, TRSF.TF_CD,       (CASE TRSF.STATUS            WHEN 'Q' THEN '요청'           WHEN 'W' THEN '대기'           WHEN 'I' THEN '진행'           WHEN 'C' THEN '완료'           WHEN 'E' THEN '실패'       ELSE '' END) STATUS,        (CASE TRSF.TF_GB           WHEN 'U' THEN '업로드'           WHEN 'D' THEN '다운로드'       ELSE '' END) TF_GB,        TRSF.PROGRESS, TRSF.RECOUNT, TRSF.REG_DTM, GET_CT_NM(SUBSTR(TRSF.CT_ID, 1,1), TRSF.CT_ID) CT_NM, TRSF.PRIORS   FROM (       SELECT tf_id, ct_id, tf_cd, STATUS, progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'D' TF_GB FROM CS_TRSF_TBL       UNION       SELECT tf_id, ct_id, tf_cd, STATUS, progress, RECOUNT, REG_DTM, PRIORS, USE_YN, 'U' TF_GB FROM VS_TRSF_TBL   ) TRSF   WHERE TRSF.USE_YN='Y' AND TRSF.STATUS <> 'C'   ORDER BY TRSF.PRIORS ASC, TRSF.TF_ID DESC       
+[2011-09-29 17:15:06,617]PreparedStatement.debug(27) | {pstm-100028} Parameters: []
+[2011-09-29 17:15:06,617]PreparedStatement.debug(27) | {pstm-100028} Types: []
+[2011-09-29 17:15:06,621]ResultSet.debug(27) | {rset-100029} ResultSet
+[2011-09-29 17:15:06,623]ResultSet.debug(27) | {rset-100029} Header: [CT_ID, CT_NM, TF_GB, STATUS, PROGRESS, REG_DTM, RECOUNT, PRIORS]
+[2011-09-29 17:15:06,624]ResultSet.debug(27) | {rset-100029} Result: [P0000007, 으헝헝, 다운로드, 실패, 0, 2011-09-29 14:50:04.0, 1, 5]
+[2011-09-29 17:15:06,625]BasicResourcePool.trace(1644) | trace com.mchange.v2.resourcepool.BasicResourcePool@186f3b3 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1083717)
+[2011-09-29 17:15:06,625]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(315) | Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN.
+[2011-09-29 17:15:06,629]NewProxyConnection.close(1260) | com.mchange.v2.c3p0.impl.NewProxyConnection@15d45d9: close() called more than once.
+[2011-09-29 17:15:06,633]C3P0PooledConnectionPool.finerLoggingTestPooledConnection(319) | Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1083717] on CHECKIN has SUCCEEDED.
